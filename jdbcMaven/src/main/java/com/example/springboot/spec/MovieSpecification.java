@@ -11,7 +11,7 @@ public class MovieSpecification {
 	
 	public static Specification<Movie> hasName(String name)
 	{
-		return (root, query, cb) ->cb.equal(root.get("name"), name); 
+		return (root,query,cb) ->cb.equal(root.get("name"), name); 
 	}
 	public static Specification<Movie> hasRatings(Integer ratings)
 	{
