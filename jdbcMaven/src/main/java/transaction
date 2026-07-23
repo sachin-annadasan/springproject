@@ -1,0 +1,13 @@
+//	    public void parent() {child();}
+//	    @Transactional(propagation = Propagation.MANDATORY) //throw error because t1 doesnt exist
+//	    public void child() {movieRepository.save(movie);}}
+//	@Transactional(propagation = Propagation.SUPPORTS)If a transaction exists → Join it.
+	//If no transaction exists → Run normally without a transaction.
+//	@Transactional     
+//	public void updateMovie() {
+//	    movieRepository.save(movie);
+//   printMessage();
+//     movieRepository.save(movie2);}
+//	@Transactional(propagation = Propagation.NOT_SUPPORTED)//susoend the transaction print no need to involve in the transaction so it wil not take part in the currebnt transaction
+//	public void printMessage() { System.out.println("Movie updated successfully");}
+
